@@ -44,7 +44,7 @@ body {
 
 #subtitle { 
     color: white;
-    margin-top: 2%; 
+    margin-top: 1%; 
     text-align: center; 
     font-size: 1.65em;
     font-style: italic;
@@ -62,35 +62,34 @@ body {
     font-style: normal; 
 }
 
-#email {
-    align-content: center; 
-    margin-top: 5%; 
-    width: 350%;
-    height: 150%; 
+.signUp {
+    display: block;
+    text-align: center;
+    margin-top: 1%; 
+    margin-bottom: 5%; 
+}
+
+.email {
+    width: 45%;
+
     padding: 5px;
     border: 1px;
     border-style: solid;
     border-color: grey; 
     font-size: 1em;
+}
+
+#emailSubmit {
+    padding: 5px;
+    height: 4%;
+    font-size: 1em; 
+    color: white;
+    background-color: #438DC7; 
+    border-color: grey; 
+
 
 }
 
-
-.signUp {
-    display: flex; 
-    flex-wrap: wrap; 
-    align-self: center; 
-    margin-bottom: 10px; 
-    color: white; 
- }
-
-.signUp > label {
-    margin-right: 20px; 
-    max-width: 120px; 
-    flex-grow: 1; 
-    flex-shrink: 0;
-    flex-basis: 120px; 
-    }
 
 
 
