@@ -71,7 +71,6 @@ body {
 
 .email {
     width: 45%;
-
     padding: 5px;
     border: 1px;
     border-style: solid;
@@ -87,9 +86,38 @@ body {
     background-color: #438DC7; 
     border-color: grey; 
 
-
 }
 
+#footer {
+    height: 25%;
+    width: 100%;
+    background-color: #28305E;
+    color: white; 
+    display: flex;
+    flex-wrap: wrap; 
+    font-family: 'muli', sans-serif; 
+    text-align: center;
+ 
+}
+
+.stats {
+    vertical-align: middle; 
+    width: 25%; 
+    margin-top: 2.75%
+    
+}
+
+.number {
+    font-size: 3em;
+    font-weight: bolder; 
+    margin-bottom: 1.5%; 
+}
+
+.thing {
+    font-weight: lighter; 
+    font-size: 2em; 
+
+}
 
 
 
