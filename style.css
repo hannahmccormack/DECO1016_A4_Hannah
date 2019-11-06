@@ -74,9 +74,10 @@
     text-align: center;
     margin-top: 1%; 
     margin-bottom: 5%; 
+    
 }
 
-.email {
+.signUp > input {
     width: 45%;
     padding: 5px;
     border: 1px;
@@ -100,6 +101,7 @@
     width: 100%;
     background-color: #28305E;
     color: white; 
+        /*setting the layout for the divs within this larger div so its applied to them all consistently*/
     display: flex;
     flex-wrap: wrap; 
     font-family: 'muli', sans-serif; 
@@ -156,9 +158,9 @@
 
 .pageTitle {
     font-family: 'Milu', sans-serif; 
-    font-weight: lighter;
+    font-weight: bold;
     padding: 35px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-style: italic;
     color: #1D1E4C; 
 }
@@ -167,9 +169,60 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+/* input form section for 2nd page */
+
+.formInfo div {
+    padding: 1.25%; 
+    margin-left: 2%; 
+}
+
+.formInfo input {
+    font-size: 1.25em; 
+}
+
+.formInfo div:first-of-type {
+    height: 50%;
+    width: 50%; 
+    font-size: 1em; 
+
 
 }
 
+#firstName + #lastName {
+    width: 50%; 
+
+}
+
+
+.formInfo div:nth-of-type(2){
+    height: 50%;
+    width: 100%; 
+    font-size: 1em; 
+    font-family: 'Milu', sans-serif; 
+
+
+}
+
+
+
+
+.email {
+    width: 45%;
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: grey; 
+    font-size: 1em;
+}
+
+.signUp {
+    display: block;
+    text-align: center;
+    margin-top: 1%; 
+    margin-bottom: 5%; 
+}
 
 
 

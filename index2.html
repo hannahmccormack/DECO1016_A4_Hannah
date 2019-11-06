@@ -18,8 +18,30 @@
         <img src="img/logo_white.png" id = "headerLogo" alt="Top Right Logo" width = 8%>
     </section>
 
-    <section class = "pageTitle">
-        <h1>PERSONAL INFORMATION</h1>
+    <section class = "formInfo">
+        <h1 class = "pageTitle">PERSONAL INFORMATION</h1>
+           
+
+        <form>
+            <div>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+            <div>
+                    <label for="date">Date of Birth</label>
+                <input type="date" id="dateInput" name="dateInput" placeholder="Date">
+            </div>
+            <div>
+                <input type="radio" class="genderForm" name="gender" value="male">Male
+                <input type="radio" class="genderForm" name="gender" value="female">Female
+                <input type="radio" class="genderForm" name="gender" value="other">Other
+                <input type="number" id="postcode" name="number">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+        </form>
 
 
 
