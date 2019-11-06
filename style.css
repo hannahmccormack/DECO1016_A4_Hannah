@@ -130,17 +130,11 @@
 
 }
 
+
+
 /* PAGE TWO */
 
-#page2{
-    background-color: white; 
-}
-
-.headerPg2 {
-    width: 100%;
-    height: 8%;
-    background-color: #1D1E4C; 
-}
+/* UNIVERSAL ELEMENTS ACROSS BOTH FORM PAGES */
 
 #signInButton2 {
     width: 80px;
@@ -161,17 +155,34 @@
 .pageTitle {
     font-family: 'Milu', sans-serif; 
     font-weight: bold;
-    padding: 35px;
+    padding: 2.75%; ;
     font-size: 2em;
     font-style: italic;
     color: #1D1E4C; 
+    margin-left: 1%; 
 }
+
+
 
 .mickeyLogo {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    flex-shrink: auto; 
 }
+
+
+#page2{
+    background-color: white; 
+    flex-direction: column;
+}
+
+.headerPg2 {
+    width: 100%;
+    height: 8%;
+    background-color: #1D1E4C; 
+}
+
 
 /* input form section for 2nd page */
 
@@ -181,10 +192,16 @@
     margin-left: 2%; 
 }
 
+input {
+    padding: 1%; 
+}
+
 /* for all the text inside inputs */
 
 .formInfo{
     width: 50%; 
+    flex: 1 0 auto; 
+    margin-left: 2%; 
 }
 .formInfo input {
     font-size: 1.25em; 
@@ -194,15 +211,16 @@
 /* for first section (name) */
 .formInfo div:first-of-type {
     height: 50%;
-    width: 50%; 
+    width: 100%; 
     font-size: 1em; 
     margin-right: 3%; 
+    flex-wrap: wrap;
 
 }
 
 
 #firstName + #lastName {
-    width: 100%; 
+    width: 50%; 
     flex-wrap: wrap; 
 
 }
@@ -214,28 +232,50 @@
     flex-wrap: wrap;  
 }
 
+div #dateInput {
+    margin-left: 2%; 
+}
+
 label {
     font-weight: normal;
     font-style: italic;
     color: grey; 
 }
 
+/* affects both gender (pg2) and payment type (pg3) */
 
-
-.radioGender input {
-    padding: 10%; 
-
-}
-.formInfo div:nth-of-type(3){
+.radioBox{
     font-family: 'Milu', sans-serif;
     flex-wrap: wrap;  
     color: black;
+    font-style: italic;
+    font-size: 1em;
+    border-style: solid; 
+    border-width: 1px;
+    border-color: lightgray; 
 }
 
+.radioBox input {
+    padding: 10%; 
+    width: 5%; 
+}
+
+/* this selector to easily select all radio inputs except the first one for nice layout*/
+.radioBoxOption ~ .radioBoxOption {
+    margin-left: 5%; 
+}
+
+/*postcode*/
+#postcode{
+    font-family: 'Milu', sans-serif;
+    flex-wrap: wrap; 
+    width: 20%;  
+}
 
 .continueButton{
     margin-left: 60%; 
     width: 50%; 
+    margin-top: 5%; 
 
 }
 
@@ -250,7 +290,41 @@ label {
 }
 
 /*trying to make continue button aligned with buttom of form*/
-body section:nth-of-type(2){
+#page2 section:nth-of-type(2){
     flex-wrap: wrap; 
 }
+
+
+
+
+/*PAGE 3 */
+
+#page3{
+    background-color: white; 
+    flex-direction: column;
+}
+
+.headerPg3 {
+    width: 100%;
+    height: 8%;
+    background-color: #1D1E4C; 
+}
+
+#cardName {
+    width: 70%; 
+}
+
+#cardNumber {
+    width: 50%; 
+}
+
+#CVV {
+    width: 12%; 
+}
+
+
+
+
+
+
 
