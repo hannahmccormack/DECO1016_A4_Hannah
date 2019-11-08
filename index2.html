@@ -10,7 +10,6 @@
 </head>
 
 <body  id = "#page2">
-    <!--so i can use the same CSS file for all pages-->
 
     <section class = "headerPg2">
     
@@ -28,54 +27,50 @@
     
         <!--FIX THIS CSS-->
 
-<section>
-    <section class = "formInfo">
-        <form>
-            <div>
-                <input type="text" id="firstName" name="firstName" placeholder="First Name">
-                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
-            </div>
+    <section>
+        <section class = "formInfo">
+            <form id="formPg2">
+                <div>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                </div>
 
-            <div>
-                    <label for="date">Date of Birth</label>
-                <input type="date" id="dateInput" name="dateInput" placeholder="Date">
-            </div>
+                <div>
+                        <label for="date">Date of Birth</label>
+                    <input type="date" id="dateInput" name="dateInput" placeholder="Date">
+                </div>
 
-            <div class="radioBox">
-                <input type="radio" class="radioBoxOption" name="gender" value="male">Male
-                <input type="radio" class="radioBoxOption" name="gender" value="female">Female
-                <input type="radio" class="radioBoxOption" name="gender" value="other">Other
-            </div>
+                <div id="radioBox1">
+                    <input type="radio" class="radioBoxOption" name="gender" value="male">Male
+                    <input type="radio" class="radioBoxOption" name="gender" value="female">Female
+                    <input type="radio" class="radioBoxOption" name="gender" value="other">Other
+                </div>
 
-            <div>
-                <input type="number" id="postcode" name="number" placeholder="Postcode">
-            </div>
-        
-            <div>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-            </div>
+                <div>
+                    <input type="number" id="postcode" name="postcode" placeholder="Postcode">
+                </div>
+            
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
 
-        </form>
+                <section class = "continueButton">
+                    <button type = "submit">Continue</button>
+                </section>
+            </form>
+        </section>
 
+
+
+        <section class = "mickeyLogo">
+            <img src ="img/mickey.png" alt = "Mickey Head Logo" width=100%>
+        </section>
     </section>
 
-    <section class = "continueButton">
-        <button type = "submit">Continue</button>
-
-
-    </section>
-
-
-
-
-    <section class = "mickeyLogo">
-        <img src ="img/mickey.png" alt = "Mickey Head Logo" width=100%>
-
-    </section>
-</section>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="validate.min.js"></script>
 
 </body>
-
 
 </html>

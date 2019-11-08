@@ -13,7 +13,7 @@
 
     <!--HEADER BAR SECTION-->
     <section class = "header">
-        <button type="button"id="navMenuButton">
+        <button type="button" id="navMenuButton" onclick = "location.href = 'index.html';">
             <section id = "nav"> 
                 <div></div>
                 <div></div>
@@ -23,10 +23,9 @@
 
         <div class = "signInButtonLayout">
             <div class="signInButtonPos">
-                <button type="button" id = "signInButton">Sign In</button>
+                <button type="button" id = "signInButton" onclick = "location.href = 'index2.html';">Sign In</button>
             </div>
         </div>
-    
     </section>
 
     <section id = "mainHomepage">
@@ -40,17 +39,17 @@
     
     </section>
 
+        <br>
 
-            <br>
+    <p id = "joinMagic">Join the magic now!</p>
 
-        <p id = "joinMagic">Join the magic now!</p>
-
-            <br>
+        <br>
     
     <div class = "signUp">
 
-        <form>
+        <form id="emailPg1Form">
             <input type="email" class="email" name="email" placeholder="Email">
+
             <button type="submit" id = "emailSubmit">Continue</button>
         </form>
 
@@ -78,13 +77,11 @@
             <p class = "number">$8</p>
             <p class = "thing">A MONTH</p>
         </div>
-
-
     </section>
 
-
-
-
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="validate.min.js"></script>
+  
 </body>
 
 </html>
