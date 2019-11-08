@@ -104,7 +104,6 @@ form3.addEventListener("submit", function(ev) {
     }
   }
 
-
     
   function redirectPg3() {
     window.location = "index4.html"; 
