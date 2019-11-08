@@ -18,37 +18,57 @@
 
 .header {
     width: 100%;
-    height: 55px;
-    background-color: lightgray;
+    background-color: white;
     padding: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
-#signInButton {
+#signInButton, #signInButton2 {
     width: 80px;
     padding: 7px; 
     border-radius: 10px;
+    font-size: 1em; 
+}
+
+#signInButton {
     background-color: #1D1E4C; 
     color: white;
-    font-size: 1em; 
-    text-decoration-color: white;
-    position: fixed;
-    right: 1%; 
+}
+
+.signInButtonPos {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px; 
+    width: 100%; 
+}
+
+.signInButtonLayout {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%; 
 }
 
 #nav > div {
     width: 40px;
-    height: 5px;
+    height: 6px;
     background-color:#1D1E4C;
-
-
+    margin-bottom: 7px; 
 }
 
+#navMenuButton {
+    border-style: none; 
+}
 
-.logoBig {
+#logoBigPg1, #logoBigPg4 {
     display: block; 
     margin: 0 auto; 
-    margin-top: 8%; 
     text-align: center; 
+}
+
+#logoBigPg1  {
+    margin-top: 8%;
 }
 
 #subtitle { 
@@ -79,7 +99,7 @@
     
 }
 
-.signUp > input {
+.email {
     width: 45%;
     padding: 5px;
     border: 1px;
@@ -137,16 +157,27 @@
 /* UNIVERSAL ELEMENTS ACROSS BOTH FORM PAGES */
 
 #signInButton2 {
-    width: 80px;
-    padding: 7px; 
-    border-radius: 10px;
     background-color: white; 
     color: #1D1E4C;
-    font-size: 1em;  
-    position: fixed;
-    right: 1%; 
-    top: 3%; 
+    align-items: center; 
+    align-self: center;
+    text-align: center; 
 }
+
+.signInButtonPos2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px; 
+    width: 100%; 
+}
+
+.signInButtonLayout2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%; 
+}
+
+
 
 #headerLogo {
     padding: 10px;
@@ -164,14 +195,6 @@
 
 
 
-.mickeyLogo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-shrink: auto; 
-}
-
-
 #page2{
     background-color: white; 
     flex-direction: column;
@@ -179,8 +202,10 @@
 
 .headerPg2 {
     width: 100%;
-    height: 8%;
-    background-color: #1D1E4C; 
+    background-color: #1D1E4C;
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 
@@ -199,6 +224,7 @@ input {
 /* for all the text inside inputs */
 
 .formInfo{
+    /*POTENTIALLY CHANGE THIS ???? */
     width: 50%; 
     flex: 1 0 auto; 
     margin-left: 2%; 
@@ -230,6 +256,7 @@ input {
 .formInfo div:nth-of-type(2){
     font-family: 'Milu', sans-serif;
     flex-wrap: wrap;  
+    margin-bottom: 2%; 
 }
 
 div #dateInput {
@@ -247,17 +274,19 @@ label {
 .radioBox{
     font-family: 'Milu', sans-serif;
     flex-wrap: wrap;  
-    color: black;
+    color: grey;
     font-style: italic;
     font-size: 1em;
     border-style: solid; 
     border-width: 1px;
     border-color: lightgray; 
+    position: relative;
+    left: 1.3%; 
+    width: 70%; 
 }
 
 .radioBox input {
-    padding: 10%; 
-    width: 5%; 
+    width: 13%;
 }
 
 /* this selector to easily select all radio inputs except the first one for nice layout*/
@@ -270,13 +299,13 @@ label {
     font-family: 'Milu', sans-serif;
     flex-wrap: wrap; 
     width: 20%;  
+    margin-top: 1.7%; 
 }
 
 .continueButton{
     margin-left: 60%; 
-    width: 50%; 
-    margin-top: 5%; 
-
+    width: 40%; 
+    margin-top: 2%; 
 }
 
 .continueButton button {
@@ -311,6 +340,7 @@ label {
 }
 
 #cardName {
+    margin-top: 2%; 
     width: 70%; 
 }
 
@@ -322,9 +352,95 @@ label {
     width: 12%; 
 }
 
+#cardExpiry {
+    width: 30%; 
+    /* FIX THIS */
+    margin-top: -1%; 
+}
+
+#agreeConditions {
+    margin-left: 8%; 
+    margin-top: 10%; 
+    margin-bottom: 3%; 
+    margin-right: 1.5%; 
+}
+
+#agreeConditions + label {
+    font-family: 'Milu', sans-serif;
+    font-size: 1.4em; 
+}
+
+/* MICKEY LOGO AT BOTTOM OF BOTH PAGES */
+
+.mickeyLogo { 
+    position: fixed;
+    left: 85%; 
+    bottom: -1%;
+}
+
+
+/*PAGE 4 - CONFIRMATION PAGE*/
+
+#page4 {
+    background-color: #1D1E4C; 
+}
+
+#logoDark {
+    position: fixed;
+    left: 92%;
+    margin-top: -1.3%;  
+    padding: 1%; 
+ 
+}
+
+#logoBigPg4  {
+    margin-top: 3.5%;
+}
+
+
+#welcome {
+    font-family: 'Milu', sans-serif;
+    font-size: 3em;
+    color: white;
+    font-style: italic; 
+    display: flex;
+    justify-content: center;
+    /* negative margin to pull disney+ logo up without editing its css */
+    margin-top: -20%; 
+}
+
+#confirmationMessage {
+    font-family: 'Milu', sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 20%;  
+    color: white;
+    display: flex;
+    justify-content: center;    
+}
+
+#mickeyLight { 
+    position: fixed;
+    left: 85%; 
+    bottom: -1%;
+}
 
 
 
+#watchButton {
+    background-color: #438DC7; 
+    color: white;
+    font-size: 2em; 
+    font-style: italic;
+    font-weight: bold; 
+    padding: 1.5%; 
+    margin-top: 4%; 
+    border-style: solid;
+    border-color: grey;
+}
 
-
-
+#watchButtonSection {
+    display: flex;
+    justify-content: center;
+}
